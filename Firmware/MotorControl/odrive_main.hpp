@@ -39,6 +39,8 @@ extern BoardConfig_t board_config;
 constexpr size_t AXIS_COUNT = 2;
 extern Axis *axes[AXIS_COUNT];
 
+#define ADC_CHANNEL_COUNT 16
+extern uint16_t adc_measurements_[ADC_CHANNEL_COUNT];
 
 // ODrive specific includes
 #include <protocol.hpp>
