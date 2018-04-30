@@ -34,7 +34,7 @@ __CONFIG_BOARD_VERSION__: The board version you're using. Can be `v3.1`, `v3.2`,
 
 __CONFIG_USB_PROTOCOL__: Defines which protocol the ODrive should use on the USB interface.
  * `native`: The native ODrive protocol. Use this if you want to use the python tools in this repo.
- * `native-stream`: Like the native ODrive protocol, but the ODrive will treat the USB connection exactly as if it was a UART connection. __Use this if you're on macOS__. This is necessary because macOS doesn't grant our python tools sufficient low-level access to treat the device as the USB device that it is.
+ * `native-stream`: Like the native ODrive protocol, but the ODrive will treat the USB connection exactly as if it was a UART connection. 
  * `ascii`: The ASCII protocol. This allows sending simple commands like position setpoints directly from the terminal to the ODrive without the use of intermediate utilities.
  * `none`: Disable USB. The device will still show up when plugged in but it will ignore any commands.
 
